@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> John (Ted) Lee Portfolio Website </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwxdxFgVK/Kvc="crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Joan:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0a5f177eac.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="img/testimg.png" alt=""> -->
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#projects" class="nav_link">My Projects</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="JohnLee.pdf" class="nav_link">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section_title section_title--intro">
+                Hi, I'm <strong>John Lee</strong> <small>(aka Ted)</small>
+            </h1>
+            <p class="section_subtitle section_subtitle--intro">software dev</p>
+            <img src="img/Ted.jpeg" alt="" class="intro_img">
+        </section>
+        
+        
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <a href="mailto:johnj.lee2016@gmail.com" class="email--link">johnj.lee2016@gmail.com</a>
+            <ul class="socials">
+
+                <li class="socials_item"><a class="socials--link" href="JohnLee.pdf">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </li>
+                <li class="socials_item"><a class="socials--link" href="https://github.com/tedlee21">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="socials_item"><a class="socials--link" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </section>
+
+        
+        <!-- My Projects  -->
+        <section class="my_projects" id="projects">
+            <h2 class="section_title section_title--projects">My Projects</h2>
+            <p class="section_subtitle section_subtitle--projects">A collection of my work</p>
+            <div class="portfolio">
+                <!-- Portfolion item 1 -->
+                <a href="https://github.com/tedlee21/Retro-RPG" class="portfolio_item item1">
+                    <p><strong>Retro RPG Game</strong></p>
+                    <p>Created in Unity, C# scripts and design patterns bring this game to life. <br> 
+                        Observer Pattern allows interactions, collisions, and scene switching. 2D Freeform Lighting and 
+                        Player HUD is currently in the works.
+                    </p>
+                </a>
+                
+                <!-- Portfolion item 2 -->
+                <a href="https://github.com/tedlee21/DigitalPet" class="portfolio_item item2">
+                    <p><strong>Digital Therapy Pet</strong></p>
+                    <p>A Desktop App for depression and anxiety, coded in Java.<br>
+                        An interactive GUI made using Swing lets you play with, pet, feed, and talk to your pet.
+                        JUnit tested, and JSON save files enabled, this app is ready for play.
+                    </p>
+                </a>
+
+                <!-- Portfolion item 3 -->
+                <a href="#" class="portfolio_item item3">
+                    <p><strong>Image Editing Software</strong></p>
+                    <p>This collection of C++ programs lets you modify PNGs to the pixel using pointer maniuplation. <br>
+                        A PNG is turned into a Tree Data Structure and node manipulation lets you apply filters, create effects, 
+                        or flip your image.
+                    </p>
+                </a>
+
+                <!-- Portfolion item 4 -->
+                <a href="#" class="portfolio_item item4">
+                    <p><strong>Portfolio Website</strong></p>
+                    <p>This site you're on right now! Self taught HTML, CSS and JavaScript has brought it to life,
+                        complete with socials, a resume, and the interactive project descriptions you are currently reading.
+                    </p>
+                </a>
+            </div>
+            <!-- projects -->
+        </section>
+
+
+        <!-- About Me -->
+        <section class="about_me" id="about">
+            <h2 class="section_title section_title--about">About the Dev</h2>
+            <p class="section_subtitle section_subtitle--about">Creative, Outgoing, Driven</p>
+            <div class="about_me--body">
+                <p>Like I said, I'm John Lee. But my friends call me Ted (it's a long story).</p>
+                <p>What isn't inconsistant is my love and passion for programming.</p>
+                <p>I'm a 2nd Year CS Student at UBC, and my hobbies include game design, guitar, and working out.</p>
+            </div>
+
+            <img src="img/testimg.png" alt="" class="about_me_img">
+        </section>
+
+        
+
+
+        
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:johnj.lee2016@gmail.com" class="email--link">johnj.lee2016@gmail.com</a>
+            <ul class="socials">
+
+                <li class="socials_item"><a class="socials--link" href="JohnLee.pdf">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </li>
+                <li class="socials_item"><a class="socials--link" href="https://github.com/tedlee21">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="socials_item"><a class="socials--link" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </footer>
+
+        <script src="js/index.js"></script>
+
+
+
+    </body>
+</html>
