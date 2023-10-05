@@ -349,6 +349,7 @@ header {
     font-size: 2rem;
     margin: 0 0.6em;
 }
+
 /* My Projects */
 
 .my_projects {
@@ -364,9 +365,9 @@ header {
 }
 
 .portfolio {
-      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(500px, 100%/2)), 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
     align-items: center;
 }
 
@@ -375,55 +376,78 @@ header {
 }
 
 .portfolio_item {
-    /* padding-bottom: 30%; */
-    aspect-ratio: 1;
-    transition: 1s;
-    display: grid;
-    justify-content: center;
-    /* align-items: center; */
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1; /* Fixed aspect ratio */
+    height: 1; /* Ensures the height is determined by the aspect ratio */
+}
+
+.portfolio_item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
 }
 
-.item1 {
-    background-image: url("RPG.jpeg");
-}
-
-.item2 {
+.item1::before {
     background-image: url("PetGame.jpeg");
 }
 
-.item3 {
+.item2::before {
+    background-image: url("Tester.gif");
+}
+
+.item3::before {
+    background-image: url("Autofonter.gif");
+}
+
+.item4::before {
     background-image: url("Photo.jpeg");
 }
 
-.item4 {
+.item5::before {
     background-image: url("Site.jpeg");
 }
 
-.portfolio_item strong {
-    /* font-family: var(--ff-secondary); */
-    font-size: 2rem;
+.item6::before {
+    background-image: url("RPG.gif");
 }
 
-.portfolio_item p{
+.portfolio_item strong {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+.portfolio_item p {
+    color: #fff;
+}
+
+.portfolio_item strong,
+.portfolio_item p {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     opacity: 0;
     transform: scale(0);
     transition: 1s;
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 2em;
+    text-align: center;
 }
 
-.portfolio_item:hover {
+.portfolio_item:hover::before {
     box-shadow: 0 0 0 1000px rgba(26, 25, 25, 0.9) inset;
 }
 
-.portfolio_item:hover p{
+.portfolio_item:hover strong,
+.portfolio_item:hover p {
     opacity: 1;
     transform: scale(1);
 }
-
 
 /* Footer */
 
