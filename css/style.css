@@ -412,7 +412,7 @@ header {
 }
 
 .item5::before {
-    background-image: url("Site.jpeg");
+    background-image: url("handsOff.gif");
 }
 
 .item6::before {
