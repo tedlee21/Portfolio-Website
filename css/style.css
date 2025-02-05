@@ -15,6 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #4785ae;
+    --clr-gold: #ffb811;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -52,7 +53,7 @@ img {
 
 strong { 
     /* font-weight: var(--fw-bold); */
-    color: #ffb811;
+    color: var(--clr-gold);
 }
 
 small { 
@@ -155,7 +156,7 @@ header {
 }
 
 .nav_link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-gold);
 }
 
 .nav-toggle {
@@ -200,7 +201,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-gold);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -292,6 +293,7 @@ header {
     }
     
     .section_subtitle--about{
+        font-family: var(--ff-secondary);
         background-color: var(--clr-accent);
         color: var(--clr-light);
         grid-column: 1 / -1;
@@ -310,11 +312,31 @@ header {
     }
 }
 
+/* News */
+
+.news {
+    padding: 1em;
+    background-color: var(--clr-gold);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.news a{
+    transition: 0.5s;
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+}
+
+.news a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
 /* Socials */
 
 .contact {
     padding: 1em;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
 }
@@ -359,8 +381,9 @@ header {
 }
 
 .section_subtitle--projects {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
+    color: var(--clr-gold);
+    /* font-weight: var(--fw-bold); */
+    font-family: var(--ff-secondary);
     margin-bottom: 2em;
 }
 
@@ -396,11 +419,11 @@ header {
 }
 
 .item1::before {
-    background-image: url("PetGame.jpeg");
+    background-image: url("Tester.gif");
 }
 
 .item2::before {
-    background-image: url("Tester.gif");
+    background-image: url("handsOff.gif");
 }
 
 .item3::before {
@@ -412,7 +435,7 @@ header {
 }
 
 .item5::before {
-    background-image: url("handsOff.gif");
+    background-image: url("PetGame.jpeg");
 }
 
 .item6::before {
